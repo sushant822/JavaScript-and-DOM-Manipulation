@@ -105,6 +105,15 @@
 					<div class="ex1">
 					<div class="hvr-grow-shadow">
                   <button id="filter-btn" type="button" class="btn1 btn-default">Filter Table</button>
+                  <script>
+                    var input = document.getElementById("datetime");
+                    input.addEventListener("keyup", function(event) {
+                      if (event.keyCode === 13) {
+                       event.preventDefault();
+                       document.getElementById("filter-btn").click();
+                      }
+                    });
+                    </script>
 					</div>
             </div>
             <!-- End -->
@@ -122,6 +131,15 @@
 					<div class="ex1">
 					<div class="hvr-grow-shadow">
                   <button id="filter-btn-city" type="button" class="btn1 btn-default">Filter Table</button>
+                  <script>
+                    var input = document.getElementById("city");
+                    input.addEventListener("keyup", function(event) {
+                      if (event.keyCode === 13) {
+                       event.preventDefault();
+                       document.getElementById("filter-btn-city").click();
+                      }
+                    });
+                    </script>
 					</div>
           </div>
           <!-- End -->
@@ -140,6 +158,15 @@
   <div class="ex1">
   <div class="hvr-grow-shadow">
           <button id="filter-btn-state" type="button" class="btn1 btn-default">Filter Table</button>
+          <script>
+            var input = document.getElementById("state");
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+               event.preventDefault();
+               document.getElementById("filter-btn-state").click();
+              }
+            });
+            </script>
   </div>
   </div>
           <!-- End -->
@@ -158,6 +185,15 @@
 					<div class="ex1"  style="padding-bottom: 20px">
                         <div class="hvr-grow-shadow">
                              <button id="filter-btn-country" type="button" class="btn1 btn-default">Filter Table</button>
+                             <script>
+                              var input = document.getElementById("country");
+                              input.addEventListener("keyup", function(event) {
+                                if (event.keyCode === 13) {
+                                 event.preventDefault();
+                                 document.getElementById("filter-btn-country").click();
+                                }
+                              });
+                              </script>
                         </div>
 					</div>
           <!-- End -->
@@ -192,7 +228,7 @@
       <li><button id="shape18" type="button" class="btn btn-default">other</button></li>
     </ul>
   </div>
-        </div>
+</div>
         <!-- End -->
           </aside>
         </div>
